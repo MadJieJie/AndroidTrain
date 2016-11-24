@@ -1,0 +1,58 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"		
+    android:layout_height="fill_parent"
+    tools:context="com.example.androidtrain.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/gray">
+    	<!--ID 命名规则  功能-组件-布局名字 -->
+    	<!-- 布局 -LinearLayout
+    	width\height\ - fill_parent强制充满(演示强制扩充) match_parent适应,适配  wrap_content 包裹,包围
+    	orientation - horizontal 水平	vertical 垂直
+    	-->
+    	
+    	<!--  -->
+        <ImageView
+	        android:layout_width="fill_parent"		
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/login_top" />
+        
+        <!-- 
+        dp 想当像素密度,物理尺寸 除以 分辨率 = 像素点数量 (dp)
+        sp和dp唯一的区别是，允许用户自定义文字尺寸大小（小、正常、大、超大等）
+                      应用场合 文字外都用DP
+        hint 暗示,提示
+        singleLine 是否单行 
+        background 背景颜色
+        margin 范围,距离
+         -->
+        
+        <EditText 
+	        android:id="@+id/account_EditText_main"
+	        android:layout_width="fill_parent"
+	        android:layout_height="60dp"
+	        android:hint="QQ号/手机号/邮箱"
+	        android:singleLine="true"
+	        android:background="@color/white"
+	        android:layout_marginBottom="5dp"/>	
+	   	 
+		<EditText 
+	        android:id="@+id/password_EditText_main"
+	        android:layout_width="match_parent"
+	        android:layout_height="60dp"
+	        android:hint="密码"
+	        android:singleLine="true"
+	        android:background="@color/white"/>	
+		
+	    <Button
+	        android:id="@+id/enter_button_main"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dp"
+			android:background="@color/deepskyblue"
+			android:textColor="@color/white"
+			android:textSize="21sp"
+			android:layout_margin="15dp"
+	        android:text="登录" />
+    
+</LinearLayout>
